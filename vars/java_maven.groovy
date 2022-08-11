@@ -1,4 +1,5 @@
 def call() {
+  env.PATH = "${tool 'maven'}/bin:${env.PATH}"
   packageApp()
 }
 
